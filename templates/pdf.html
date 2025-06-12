@@ -19,14 +19,14 @@
             --accent: #f39c12;
             --border-color: rgba(255, 255, 255, 0.1);
             
-            /* Donut chart colors */
-            --chart-color-1: #2c3e50;
-            --chart-color-2: #465669;
-            --chart-color-3: #5f7285;
-            --chart-color-4: #8494a4;
-            --chart-color-5: #a9b5c0;
-            --chart-color-6: #cbd3da;
-            --chart-color-7: #edf0f2;
+            /* Donut chart colors - Pastel theme */
+            --chart-color-1: #FFB3BA;  /* Pastel Pink */
+            --chart-color-2: #BAFFC9;  /* Pastel Green */
+            --chart-color-3: #BAE1FF;  /* Pastel Blue */
+            --chart-color-4: #FFFFBA;  /* Pastel Yellow */
+            --chart-color-5: #FFB3FF;  /* Pastel Purple */
+            --chart-color-6: #B3FFE6;  /* Pastel Teal */
+            --chart-color-7: #FFD6B3;  /* Pastel Orange */
         }
 
         /* General Body Styles */
@@ -358,7 +358,7 @@
                         <div class="legend-color" style="background-color: {{ item.color|safe }};"></div>
                         <span class="legend-label">{{ item.label }}</span>
                         <span class="legend-amount">{{ item.amount }}</span>
-                        <span class="legend-percentage">{{ item.percentage_change }}</span>
+                        <span class="legend-percentage">{{ item.percentage }}</span>
                     </div>
                     {% endfor %}
                 </div>
